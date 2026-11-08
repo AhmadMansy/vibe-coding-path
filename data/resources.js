@@ -160,17 +160,6 @@ window.VC_RESOURCES = [
     }
   },
   {
-    id: "ztm-vibe", type: "course", lang: "en", cost: "paid", level: "grow", stage: 3,
-    goals: ["career", "web"], who: ["zero", "some"],
-    url: "https://zerotomastery.io/courses/learn-vibe-coding/",
-    provider: "Zero To Mastery",
-    title: { ar: "Learn Vibe Coding — Zero To Mastery", en: "Learn Vibe Coding (ZTM)" },
-    desc: {
-      ar: "كورس طويل قائم على مشاريع، هدفه تطلع منه ببورتفوليو وتقدر تشتغل كمطور مدعوم بالذكاء الاصطناعي.",
-      en: "Long, project-based course aimed at building a portfolio and working as an AI-augmented developer."
-    }
-  },
-  {
     id: "udemy-security", type: "course", lang: "en", cost: "paid", level: "grow", stage: 4,
     goals: ["career", "web", "work"], who: ["some", "dev"],
     url: "https://www.udemy.com/course/the-vibe-coding-security-and-risk-course/",
@@ -285,7 +274,7 @@ window.VC_RESOURCES = [
   {
     id: "ai-studio-build", type: "guide", lang: "en", cost: "free", level: "start", stage: 2,
     goals: ["web", "mobile", "game", "work"], who: ["all"], featured: true,
-    url: "https://ai.google.dev/gemini-api/docs/aistudio-build-mode",
+    url: "https://aistudio.google.com/docs/aistudio-build-mode",
     provider: "Google AI Studio",
     title: { ar: "ابني تطبيقات في Google AI Studio", en: "Build apps in Google AI Studio" },
     desc: {
@@ -296,7 +285,7 @@ window.VC_RESOURCES = [
   {
     id: "anthropic-best-practices", type: "guide", lang: "en", cost: "free", level: "grow", stage: 3,
     goals: ["career", "web", "auto"], who: ["some", "dev"],
-    url: "https://www.anthropic.com/engineering/claude-code-best-practices",
+    url: "https://code.claude.com/docs/en/best-practices",
     provider: "Anthropic Engineering",
     title: { ar: "أفضل ممارسات Claude Code", en: "Claude Code best practices" },
     desc: {
@@ -351,7 +340,7 @@ window.VC_RESOURCES = [
   {
     id: "owasp-top10", type: "guide", lang: "en", cost: "free", level: "grow", stage: 4,
     goals: ["career", "web", "work", "mobile"], who: ["some", "dev"],
-    url: "https://owasp.org/Top10/",
+    url: "https://top10.owasp.org/",
     provider: "OWASP",
     title: { ar: "OWASP Top 10 — أشهر الثغرات", en: "OWASP Top 10" },
     desc: {
@@ -373,14 +362,14 @@ window.VC_RESOURCES = [
     }
   },
   {
-    id: "replit-yt-101", type: "video", lang: "en", cost: "free", level: "start", stage: 2,
+    id: "replit-yt-101", type: "video", lang: "en", cost: "free", level: "start", stage: 1,
     goals: ["web", "work"], who: ["zero", "some", "pro"],
     url: "https://www.youtube.com/watch?v=5OWurmg41tI",
-    provider: "Replit · Matt Palmer", duration: "~26m",
-    title: { ar: "Vibe coding 101 — بناء خريطة تفاعلية ونشرها", en: "Vibe coding 101: build & deploy an interactive map" },
+    provider: "Replit · Matt Palmer", duration: "4m",
+    title: { ar: "يعني إيه Vibe Coding؟ (شرح سريع)", en: "What is Vibe Coding? (quick intro)" },
     desc: {
-      ar: "فيديو كامل من الفكرة المرسومة على ورقة لحد تطبيق خريطة منشور، بكل الأخطاء والتعديلات الحقيقية.",
-      en: "End to end from a paper sketch to a deployed map app, mistakes and fixes included."
+      ar: "مقدمة من 4 دقايق من Replit: تعريف الـ vibe coding، وإزاي وكلاء الذكاء الاصطناعي بيكتبوا الكود من وصفك. بداية سريعة قبل ما تختار أداة.",
+      en: "A 4-minute intro from Replit: what vibe coding is and how AI agents write code from your description. A fast start before you pick a tool."
     }
   },
   {
@@ -498,7 +487,7 @@ window.VC_RESOURCES = [
   {
     id: "rosebud", type: "tool-guide", lang: "en", cost: "freemium", level: "start", stage: 2,
     goals: ["game", "kids"], who: ["zero", "pro", "some"], featured: true,
-    url: "https://lab.rosebud.ai/vibe-code",
+    url: "https://rosebud.ai/vibe-coding-tool",
     provider: "Rosebud AI",
     title: { ar: "Rosebud AI — اعمل لعبة بالوصف", en: "Rosebud AI: describe a game, play it" },
     desc: {
@@ -520,7 +509,7 @@ window.VC_RESOURCES = [
   {
     id: "vibe-jam", type: "community", lang: "en", cost: "free", level: "grow", stage: 4,
     goals: ["game"], who: ["all"],
-    url: "https://jam.pieter.com/2026/",
+    url: "https://vibejam.com/",
     provider: "Pieter Levels (@levelsio)",
     title: { ar: "Vibe Jam — مسابقة ألعاب بالذكاء الاصطناعي", en: "Vibe Coding Game Jam" },
     desc: {
@@ -966,7 +955,7 @@ window.VC_RESOURCES = [
   {
     id: "opencode-docs-rules", tags: ["opencode"], type: "guide", lang: "en", cost: "free", level: "grow", stage: 3,
     goals: ["career", "web", "auto", "work"], who: ["some", "dev"],
-    url: "https://opencode.ai/docs/rules",
+    url: "https://docs.opencode.ai/docs/rules/",
     provider: "OpenCode",
     title: { ar: "ملف AGENTS.md: علّم OpenCode قواعد مشروعك", en: "Rules and AGENTS.md: teach OpenCode your project" },
     desc: {
@@ -988,7 +977,7 @@ window.VC_RESOURCES = [
   {
     id: "opencode-docs-github", tags: ["opencode"], type: "guide", lang: "en", cost: "free", level: "pro", stage: 4,
     goals: ["career", "web", "auto"], who: ["dev", "some"],
-    url: "https://opencode.ai/docs/github",
+    url: "https://docs.opencode.ai/docs/github/",
     provider: "OpenCode",
     title: { ar: "OpenCode مع GitHub: مراجعة ونشر تلقائي", en: "OpenCode on GitHub: automated review and shipping" },
     desc: {
