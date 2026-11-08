@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مسار الفايب كودينج</title>
+<meta name="description" content="دليل عربي وإنجليزي لتعلم الـ vibe coding: كورسات وفيديوهات وأدوات ومستودعات في مسار على مقاسك.">
+<meta name="theme-color" content="#2F3CF0">
+<script>
+  /* apply a saved manual theme before first paint (no flash); otherwise the CSS follows the system */
+  try { var th = JSON.parse(localStorage.getItem("vcp.theme")); if (th === "light" || th === "dark") document.documentElement.setAttribute("data-theme", th); } catch (e) {}
+</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://ahmadmansy.github.io/vibe-coding-path/">
+
+<!-- Social preview (WhatsApp, X, LinkedIn, Telegram...) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مسار الفايب كودينج · Vibe Coding Path">
+<meta property="og:title" content="مسار الفايب كودينج · Vibe Coding Path">
+<meta property="og:description" content="دليل عربي وإنجليزي لتعلم الـ vibe coding: اعمل مسارك في 4 أسئلة، ومعاه كورسات وأدوات ومسار مجاني بـ OpenCode. · A bilingual guide to learning vibe coding, with a free OpenCode path.">
+<meta property="og:url" content="https://ahmadmansy.github.io/vibe-coding-path/">
+<meta property="og:image" content="https://ahmadmansy.github.io/vibe-coding-path/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="مسار الفايب كودينج: دليل لتعلم vibe coding">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="مسار الفايب كودينج · Vibe Coding Path">
+<meta name="twitter:description" content="دليل عربي وإنجليزي لتعلم الـ vibe coding بمسار على مقاسك، ومعاه مسار مجاني بـ OpenCode.">
+<meta name="twitter:image" content="https://ahmadmansy.github.io/vibe-coding-path/assets/og.png">
+
+<!-- Self-hosted fonts (no Google requests) -->
+<link rel="preload" href="assets/fonts/cairo-arabic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibmplexsansarabic-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">تخطّى للمحتوى الرئيسي</a>
+<noscript>
+  <div style="padding:1.2rem;margin:1rem;border:2px solid #E5484D;border-radius:12px;background:#fff;color:#141832;font:16px/1.7 system-ui,sans-serif;text-align:center">
+    الموقع ده محتاج JavaScript عشان يشتغل. فعّله من إعدادات المتصفح وحدّث الصفحة.<br>
+    This site needs JavaScript to run. Please enable it in your browser and reload.
+  </div>
+</noscript>
+
+<!-- ============ icon sprite ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M7 13h6M7 16h9"/></symbol>
+  <symbol id="i-game" viewBox="0 0 24 24"><path d="M6.5 8h11a4 4 0 0 1 3.9 4.9l-.8 3.6a2.5 2.5 0 0 1-4.3 1.1L14.5 16h-5l-1.8 1.6a2.5 2.5 0 0 1-4.3-1.1l-.8-3.6A4 4 0 0 1 6.5 8Z"/><path d="M8 11v3M6.5 12.5h3M15.5 12h.01M17.5 13.5h.01"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-work" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7M3 12.5h18M11 12.5v2h2v-2"/></symbol>
+  <symbol id="i-kids" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4.5"/><path d="M10.3 8h.01M13.7 8h.01M10.5 10.3c.9.7 2.1.7 3 0M5 21c.8-3.6 3.6-6 7-6s6.2 2.4 7 6"/><path d="M9 4.6 8 2.5M15 4.6l1-2.1"/></symbol>
+  <symbol id="i-auto" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 0 1-13.7 5.6L4 15.3M4 20v-4.7h4.7"/></symbol>
+  <symbol id="i-career" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></symbol>
+  <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9M12 12c0-4-3-6.5-7-6.5 0 4 3 6.5 7 6.5ZM12 14.5c0-3.5 2.6-6 6.5-6 0 3.5-2.6 6-6.5 6Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="m8 10-2.5 2.5L8 15M16 10l2.5 2.5L16 15M13.2 9l-2.4 7"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.3 7 21l5-2.6 5 2.6-1.5-7.7M12 6.8v4.4M9.8 9h4.4"/></symbol>
+  <symbol id="i-plan" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M9 3.5V5h6V3.5M8.5 10h7M8.5 13.5h7M8.5 17h4"/></symbol>
+  <symbol id="i-step" viewBox="0 0 24 24"><path d="M4 19h5v-5h5V9h6"/><path d="m17 6 3 3-3 3"/></symbol>
+  <symbol id="i-bug" viewBox="0 0 24 24"><rect x="7" y="8" width="10" height="12" rx="5"/><path d="M12 12v8M7 13H3.5M20.5 13H17M7 17.5l-3 1.5M17 17.5l3 1.5M7.5 9.5 5 7M16.5 9.5 19 7M9.5 8a2.5 2.5 0 0 1 5 0"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><path d="M14.5 4.5 19.5 9.5 11 18l-5-5ZM6 13c-2 0-3 1.5-3 3.5V20h3.5C8.5 20 10 19 10 17"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5ZM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.5 7.5 9.5 4.4-1 7.5-4.9 7.5-9.5V6Z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5Z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3"/></symbol>
+  <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.7M4 4v4.7h4.7"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9v6l5-3Z" fill="currentColor"/></symbol>
+  <symbol id="i-playlist" viewBox="0 0 24 24"><path d="M4 6h11M4 10.5h11M4 15h6"/><path d="M14 14v6l5-3Z" fill="currentColor"/></symbol>
+  <symbol id="i-course" viewBox="0 0 24 24"><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/><path d="M6.5 11v4.5c1.5 1.6 3.4 2.4 5.5 2.4s4-.8 5.5-2.4V11M21.5 9v5"/></symbol>
+  <symbol id="i-repo" viewBox="0 0 24 24"><path d="M6 3.5h12V18H7.5A1.5 1.5 0 0 0 6 19.5ZM6 19.5A1.5 1.5 0 0 0 7.5 21H18M9.5 7.5h5"/></symbol>
+  <symbol id="i-guide" viewBox="0 0 24 24"><path d="M6 3.5h9l3.5 3.5V20.5H6Z"/><path d="M14.5 3.5V7.5h4M9 11.5h6M9 15h6M9 18h3.5"/></symbol>
+  <symbol id="i-path" viewBox="0 0 24 24"><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="5.5" r="2"/><path d="M7.5 18.5h6a3 3 0 0 0 0-6h-3a3 3 0 0 1 0-6h6"/></symbol>
+  <symbol id="i-community" viewBox="0 0 24 24"><circle cx="8.5" cy="9" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5M14.5 14.5c.6-.3 1.3-.5 2-.5 2.3 0 4 1.7 4.5 4.5"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-5.8 5.8a1.8 1.8 0 0 0 2.5 2.5l5.8-5.8a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.5-.4-.4-2.5Z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.2 6.5l2.5 1.5M17.3 16l2.5 1.5M4.2 17.5 6.7 16M17.3 8l2.5-1.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 6.1A9.6 9.6 0 0 1 12 6c6 0 9.5 6 9.5 6a17 17 0 0 1-3 3.6M6.4 7.6A16.6 16.6 0 0 0 2.5 12S6 18 12 18a9 9 0 0 0 4-.9"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M15.5 4.5 19.5 8.5 9 19H5v-4Z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol>
+  <symbol id="i-tool-guide" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-5.8 5.8a1.8 1.8 0 0 0 2.5 2.5l5.8-5.8a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.5-.4-.4-2.5Z"/></symbol>
+</svg>
+
+<div class="banner" id="banner" hidden></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#hero" aria-label="مسار الفايب كودينج">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="2" y="4" width="30" height="24" rx="8" fill="var(--accent)"/>
+        <path d="M10 28 6 35l11-7" fill="var(--accent)"/>
+        <path d="m13 12-4 4 4 4M21 12l4 4-4 4" stroke="var(--accent-ink)" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="33" cy="9" r="5.5" fill="var(--hl)"/>
+      </svg>
+      <span data-i18n="brand">مسار الفايب كودينج</span>
+    </a>
+    <nav class="nav" aria-label="الأقسام">
+      <a href="#idea" data-i18n="nav.idea">الفكرة</a>
+      <a href="#wizard" data-i18n="nav.wizard">اعمل مسارك</a>
+      <a href="#library" data-i18n="nav.library">المكتبة</a>
+      <a href="#tools" data-i18n="nav.tools">الأدوات</a>
+      <a href="#free" data-i18n="nav.free">ببلاش</a>
+      <a href="#prompts" data-i18n="nav.prompts">حقيبة الأوامر</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" id="lang-ar" aria-pressed="true">ع</button>
+      <button type="button" id="lang-en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="theme-btn" id="theme-btn" aria-label="الوضع الداكن"><svg class="icon" aria-hidden="true"><use id="theme-ic" href="#i-moon"/></svg></button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div>
+      <h1><span data-i18n="hero.l1">قول فكرتك بكلامك،</span><span class="line2" data-i18n="hero.l2">وشوفها بتتبني قدامك.</span></h1>
+      <p class="lede" data-i18n="hero.lede">دليل بالعربي والإنجليزي لتعلم الـ vibe coding: كورسات وفيديوهات وأدوات ومستودعات، مترتبة في مسار على مقاسك. سواء عايز موقع لشغلك، لعبة لأولادك، أو برنامج لعيادتك.</p>
+      <div class="ctas">
+        <a class="btn" href="#wizard"><svg class="icon"><use href="#i-path"/></svg><span data-i18n="hero.cta">اعمل مسارك في 4 أسئلة</span></a>
+        <a class="btn ghost" href="#library"><svg class="icon"><use href="#i-book"/></svg><span data-i18n="hero.cta2">تصفّح المكتبة</span></a>
+      </div>
+      <div class="counts" id="counts"></div>
+      <p class="reviewed"><svg class="icon"><use href="#i-check"/></svg><span data-i18n="hero.reviewed">آخر مراجعة للمصادر والأسعار: نوفمبر 2026</span> · <a href="#curation" data-i18n="hero.how">إزاي بنختار؟</a></p>
+    </div>
+
+    <div class="studio" id="studio" aria-label="عرض حي">
+      <div class="studio-bar">
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="scen-tabs" role="tablist" id="scen-tabs"></div>
+      </div>
+      <div class="studio-body">
+        <div class="chat" id="chat" aria-live="polite"></div>
+        <div class="preview sketch" id="preview"></div>
+      </div>
+      <div class="studio-foot">
+        <button type="button" id="st-play" aria-label="إيقاف"><svg class="icon"><use href="#i-pause"/></svg></button>
+        <button type="button" id="st-replay" aria-label="إعادة"><svg class="icon"><use href="#i-replay"/></svg></button>
+        <div class="progress" aria-hidden="true"><i id="st-prog"></i></div>
+        <span class="caption" id="st-cap"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IDEA ============ -->
+<section id="idea">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="idea.title">يعني إيه Vibe Coding؟</h2>
+      <p data-i18n="idea.lede">إنك توصف اللي عايزه بلغتك العادية، والذكاء الاصطناعي يكتب الكود، وأنت تجرّب وتعدّل لحد ما يبقى زي ما تخيلته. المصطلح أطلقه أندريه كارباثي في فبراير 2025، وبقى طريقة حقيقية لبناء البرامج.</p>
+    </div>
+    <div class="idea-grid">
+      <div class="loop-card" id="loop"></div>
+      <div class="versus">
+        <div class="lane" id="lane-old"></div>
+        <div class="lane" id="lane-new"></div>
+        <div class="chart-card" id="so-chart"></div>
+        <div class="limits">
+          <h3 data-i18n="idea.limitsT">بس خلي بالك من حدوده</h3>
+          <ul id="limits-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIZARD ============ -->
+<section id="wizard" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="wiz.title">اعمل مسارك</h2>
+      <p data-i18n="wiz.lede">4 أسئلة بس، وهنرتب لك المصادر والأدوات وأول مشروع وأول أمر تكتبه.</p>
+    </div>
+    <div class="wizard">
+      <div class="wstep">
+        <h3><span class="n">1</span><span data-i18n="wiz.q1">عايز المصادر بأي لغة؟</span></h3>
+        <div class="opts-grid" id="w-lang"></div>
+      </div>
+      <div class="wstep">
+        <h3><span class="n">2</span><span data-i18n="wiz.q2">إيه خلفيتك؟</span></h3>
+        <div class="opts-grid" id="w-bg"></div>
+        <div class="prof-row" id="w-prof" hidden></div>
+      </div>
+      <div class="wstep">
+        <h3><span class="n">3</span><span data-i18n="wiz.q4">هتمشي ببلاش ولا معاك ميزانية؟</span></h3>
+        <div class="opts-grid" id="w-budget"></div>
+      </div>
+      <div class="wstep">
+        <h3><span class="n">4</span><span data-i18n="wiz.q3">عايز توصل لإيه؟</span></h3>
+        <div class="opts-grid" id="w-goal"></div>
+      </div>
+      <div class="wiz-go">
+        <button class="btn" type="button" id="w-go"><svg class="icon"><use href="#i-path"/></svg><span data-i18n="wiz.go">طلّع مساري</span></button>
+        <small data-i18n="wiz.note">الاختيارات بتتحفظ على جهازك بس.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PATH ============ -->
+<section id="path">
+  <div class="wrap">
+    <div class="path-head">
+      <div>
+        <h2 id="path-title"></h2>
+        <p id="path-sub" style="color:var(--muted);margin-top:.4rem"></p>
+      </div>
+      <span class="example-tag" id="path-example" data-i18n="path.example">مثال: غيّر الاختيارات فوق</span>
+    </div>
+    <div class="path-top">
+      <div class="panel">
+        <h3 data-i18n="path.tools">الأدوات المناسبة ليك</h3>
+        <div class="oc-banner" id="path-oc" hidden></div>
+        <div class="tool-picks" id="path-tools"></div>
+        <div class="idea-box">
+          <h3 data-i18n="path.project">أول مشروع تبنيه</h3>
+          <p class="proj" id="path-project"></p>
+          <div class="prompt-box" id="path-prompt"></div>
+        </div>
+      </div>
+      <div class="panel timeline">
+        <h3 data-i18n="path.timeline">الخطة على أسابيع</h3>
+        <div id="path-timeline"></div>
+        <p class="note" data-i18n="path.timeNote">تقدير لساعتين أو تلاتة في الأسبوع. ناس كتير بتطلع أول نسخة في يوم واحد.</p>
+      </div>
+    </div>
+    <div class="stages" id="path-stages"></div>
+  </div>
+</section>
+
+<!-- ============ LIBRARY ============ -->
+<section id="library" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="lib.title">المكتبة</h2>
+      <p data-i18n="lib.lede">كل المصادر في مكان واحد: كورسات، فيديوهات، أدلة رسمية، ومستودعات GitHub. الروابط اللي عليها علامة "بحث" بتفتح بحث يوتيوب محدّث بدل رابط ممكن يتغير.</p>
+    </div>
+    <div class="lib-bar">
+      <div class="searchbox"><svg class="icon"><use href="#i-search"/></svg><label class="sr-only" for="q" data-i18n="lib.search">ابحث</label><input id="q" type="search" placeholder="ابحث: Claude Code، ألعاب، موبايل…"></div>
+      <div class="lib-filters">
+        <div class="toggle-group" id="f-lang" aria-label="language"></div>
+        <div class="toggle-group" id="f-type" aria-label="type"></div>
+        <label><span data-i18n="lib.goal">الهدف</span> <select id="f-goal"></select></label>
+        <label><span data-i18n="lib.cost">التكلفة</span> <select id="f-cost"></select></label>
+        <label><span data-i18n="lib.level">المستوى</span> <select id="f-level"></select></label>
+      </div>
+    </div>
+    <div class="lib-meta">
+      <span id="lib-count"></span>
+      <div class="toggle-group">
+        <button class="toggle" type="button" id="v-grid" aria-pressed="true"><svg class="icon"><use href="#i-grid"/></svg><span data-i18n="lib.grid">شبكة</span></button>
+        <button class="toggle" type="button" id="v-list" aria-pressed="false"><svg class="icon"><use href="#i-list"/></svg><span data-i18n="lib.list">قائمة</span></button>
+      </div>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="more-row"><button class="btn ghost" type="button" id="more" hidden></button></div>
+    <div class="lib-charts">
+      <div class="chart-card" id="chart-types"></div>
+      <div class="chart-card" id="chart-goals"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section id="tools">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="tools.title">خريطة الأدوات</h2>
+      <p data-i18n="tools.lede">كل أداة على الخريطة حسب سهولتها لغير المبرمج وقد إيه تقدر توصل بيها. دوس على أي نقطة.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="map-card">
+        <div id="tool-map"></div>
+        <p class="disclaimer" data-i18n="tools.disc">المواقع على الخريطة تقدير تحريري للمقارنة، والأسعار من صفحات الأدوات ومراجعات 2026 وممكن تتغير.</p>
+        <div class="tool-detail" id="tool-detail"></div>
+      </div>
+      <div>
+        <div class="toggle-group" id="t-cat" style="margin-bottom:.8rem"></div>
+        <div class="tool-list" id="tool-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FREE AI ============ -->
+<section id="free" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="free.title">استخدم الذكاء الاصطناعي ببلاش مع OpenCode</h2>
+      <p data-i18n="free.lede">OpenCode نفسه مجاني ومفتوح المصدر، والتكلفة الحقيقية هي الموديل. دي أحسن مصادر مجانية تربطها بيه، مترتبة بالترتيب اللي تنتقل بيه لما مصدر يوصل لحده اليومي.</p>
+      <span class="chip" id="free-updated" style="justify-self:start"></span>
+    </div>
+    <ol class="chain" id="free-chain"></ol>
+    <div class="free-grid">
+      <div class="term" id="free-steps"></div>
+      <div class="free-tips"><h3 data-i18n="free.tipsT">قبل ما تبدأ</h3><ul id="free-tips"></ul></div>
+    </div>
+    <div class="free-learn">
+      <h3 data-i18n="free.learnT">اتعلم OpenCode: كورسات وفيديوهات</h3>
+      <div class="learn-grid" id="free-learn"></div>
+    </div>
+    <p class="free-src" id="free-src"></p>
+  </div>
+</section>
+
+<!-- ============ PROMPTS ============ -->
+<section id="prompts" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="kit.title">حقيبة الأوامر</h2>
+      <p data-i18n="kit.lede">أوامر جاهزة تنسخها وتغيّر اللي بين القوسين. بتشتغل مع أي أداة: Lovable وClaude وAI Studio وCursor وغيرهم.</p>
+    </div>
+    <div class="kit" id="kit"></div>
+    <div class="sec-head" style="margin-top:3.5rem;margin-bottom:0">
+      <h2 data-i18n="rules.title">9 قواعد تحميك من الصداع</h2>
+    </div>
+    <div class="rules" id="rules"></div>
+  </div>
+</section>
+
+<!-- ============ HOW WE CURATE ============ -->
+<section id="curation">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 data-i18n="cur.title">إزاي بنختار المصادر؟</h2>
+      <p data-i18n="cur.lede">الدليل ده مستقل ومفتوح المصدر. دي القواعد اللي بنمشي عليها.</p>
+    </div>
+    <div class="cur-grid">
+      <div class="cur-card"><h3 data-i18n="cur.in.t">اللي بنضيفه</h3><p data-i18n="cur.in.p">كورسات وفيديوهات وأدلة رسمية بتعلّمك فعلًا، مجانية أو فيها نسخة مجانية. بنتأكد إن الرابط شغّال قبل ما نضيفه، وبنفضّل العربي لما تكون جودته كويسة، والجديد على القديم.</p></div>
+      <div class="cur-card"><h3 data-i18n="cur.out.t">اللي مش بنضيفه</h3><p data-i18n="cur.out.p">أي حاجة بتوعد بالغنى السريع، أو بتبيع كورس غالي من غير محتوى حقيقي، أو بتطلب بيانات دفع من غير داعي. أي مصدر مدفوع بنكتب عليه "مدفوع" بوضوح.</p></div>
+      <div class="cur-card"><h3 data-i18n="cur.price.t">مفيش رعاة، والأسعار بتتغير</h3><p data-i18n="cur.price.p">مفيش روابط عمولة ولا مقابل على ظهور أي أداة. أسعار الأدوات وحدود الخطط المجانية بتتغير كل كام شهر، فاتأكد من صفحة الأداة قبل ما تدفع، ولو لقيت حاجة قديمة بلّغنا.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3 data-i18n="foot.t1">عن الدليل</h3>
+      <p data-i18n="foot.p1">المصادر متجمعة ومراجعة في نوفمبر 2026. الأسعار والخطط المجانية بتتغير كتير، فاتأكد من صفحة الأداة قبل ما تدفع. لو رابط وقف أو عندك مصدر حلو، قولنا من هنا:</p>
+      <ul class="foot-links">
+        <li><a id="foot-suggest" href="https://github.com/ahmadmansy/vibe-coding-path/issues/new" target="_blank" rel="noopener" data-i18n="foot.suggest">اقترح مصدر أو بلّغ عن رابط</a></li>
+        <li><a href="https://github.com/ahmadmansy/vibe-coding-path" target="_blank" rel="noopener" data-i18n="foot.repo">الكود على GitHub (MIT)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="foot.t2">مصادر الأرقام</h3>
+      <ul id="foot-sources"></ul>
+    </div>
+  </div>
+</footer>
+
+<button class="btn admin-fab" type="button" id="admin-fab" hidden><svg class="icon"><use href="#i-gear"/></svg><span data-i18n="adm.open">إدارة المحتوى</span></button>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="adm-title">
+  <header>
+    <h2 id="adm-title" data-i18n="adm.title">إدارة المحتوى</h2>
+    <button class="btn ghost small" type="button" id="adm-close"><svg class="icon"><use href="#i-close"/></svg><span data-i18n="adm.close">إغلاق</span></button>
+  </header>
+  <div class="tabs toggle-group" id="adm-tabs"></div>
+  <div class="dbody" id="adm-body"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data/resources.js"></script>
+<script src="data/tools.js"></script>
+<script src="data/content.js"></script>
+<script src="data/free.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

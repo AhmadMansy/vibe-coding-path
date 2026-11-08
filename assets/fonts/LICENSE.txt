@@ -1,0 +1,4 @@
+﻿These fonts are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org):
+- Cairo (c) The Cairo Project Authors  https://github.com/Gue3bara/Cairo
+- IBM Plex Sans Arabic and IBM Plex Mono (c) IBM Corp.  https://github.com/IBM/plex
+They were downloaded from Google Fonts (woff2, arabic + latin subsets) and are served from this folder.

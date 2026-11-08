@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmadmansy.github.io/vibe-coding-path/sitemap.xml
