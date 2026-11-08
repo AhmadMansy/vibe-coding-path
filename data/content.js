@@ -186,6 +186,24 @@ window.VC_CONTENT = {
     { ar: "مشروع واحد في المرة", en: "One project at a time", d: { ar: "خلّص الأول لحد ما ينزل لناس، وبعدين افتح اللي بعده. المشاريع الكتير المفتوحة بتنقص منها كلها وبتضيّع منك الحماس.", en: "Finish the first until it's live, then start the next. Many half-open projects drain your focus and none of them ship." } }
   ],
 
+  /* إمتى متعتمدش على الـ vibe coding — "when not to vibe code" (last section of the page) */
+  caution: {
+    slow: [
+      { ar: "الفلوس", en: "Money", d: { ar: "الدفع الإلكتروني والفواتير والحسابات. غلطة صغيرة بتتحول لخسارة حقيقية.", en: "Payments, invoices and accounting. A small bug becomes a real loss." } },
+      { ar: "تسجيل الدخول والصلاحيات", en: "Login and permissions", d: { ar: "كود الأمان بيبان سليم وهو مخروق. الذكاء الاصطناعي بيكتب كود شغّال، مش بالضرورة آمن.", en: "Security code can look right and still be broken. AI writes code that works, not necessarily code that is safe." } },
+      { ar: "بيانات الناس", en: "People's data", d: { ar: "ملفات المرضى وبيانات العملاء والهويات. لو اتسربت، المسؤولية عليك.", en: "Patient files, customer data, IDs. If it leaks, it's on you." } },
+      { ar: "أي حاجة ممكن تأذي حد", en: "Anything that can hurt someone", d: { ar: "برامج طبية أو قانونية أو هندسية أو بتتحكم في أجهزة. مفيش مكان للتخمين.", en: "Medical, legal, engineering or hardware-control software. There is no room for guessing." } },
+      { ar: "قواعد البيانات الحقيقية", en: "Real databases", d: { ar: "متسيبش الوكيل يشغّل أوامر على بيانات حقيقية من غير نسخة احتياطية ومن غير ما تقرا الأمر.", en: "Never let an agent run commands on live data without a backup and without reading the command first." } }
+    ],
+    habits: [
+      { ar: "متوافقش على أمر مش فاهمه", en: "Don't approve commands you don't understand", d: { ar: "خصوصًا الحذف والتثبيت. اضبط الأداة تسألك قبل التنفيذ.", en: "Especially deletes and installs. Set the tool to ask before it runs anything." } },
+      { ar: "متنشرش بعد تجربة واحدة", en: "Don't ship after one try", d: { ar: "جرّب على موبايل، وبأخطاء متعمّدة، ومع شخص تاني قبل ما حد يستخدمه.", en: "Try it on a phone, with deliberate mistakes, and with another person before anyone relies on it." } },
+      { ar: "اتعلّم الكود اللي بيتكتب", en: "Learn the code that gets written", d: { ar: "لو بتتعلم للشغل، اطلب شرح كل جزء. اللي بيقبل أي حاجة بيفضل مبتدئ.", en: "If you're learning for a career, ask for every part to be explained. Accepting everything keeps you a beginner." } },
+      { ar: "راجع المكتبات اللي بتتضاف", en: "Check the packages it adds", d: { ar: "اتأكد إنها معروفة وفيها ناس كتير بتستخدمها، ومش اسم مألّف.", en: "Make sure they're well known and widely used, not an invented name." } },
+      { ar: "الذكاء الاصطناعي بيغلط بثقة", en: "AI is wrong with confidence", d: { ar: "لو قال \"تم\"، اتأكد بنفسك. التجربة أهم من الكلام.", en: "If it says \"done\", check for yourself. Testing beats claims." } }
+    ]
+  },
+
   /* إحصائيات حقيقية للرسم — real stats used in a chart (with sources) */
   stats: {
     soSurvey: {

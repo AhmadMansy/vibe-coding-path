@@ -43,6 +43,7 @@ Most "learn vibe coding" lists are a pile of links. This site asks **four questi
 - 🗺️ **Tool map** that places 20+ tools on *ease vs. depth*.
 - 🔌 **Free AI providers for OpenCode** with real limits, privacy notes and copy-paste setup commands.
 - 🧰 **Prompt kit and 9 golden rules** so your first project doesn't end in a mess.
+- ⚠️ **"When not to rely on vibe coding"**: money, login, people's data, anything that can hurt someone, plus habits that keep you safe.
 - 🌗 Arabic (RTL, default) and English · light and dark · keyboard friendly · no tracking.
 
 ## 🖼️ A look inside

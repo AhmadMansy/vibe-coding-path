@@ -54,6 +54,8 @@
       "kit.title": "حقيبة الأوامر", "kit.lede": "أوامر جاهزة تنسخها وتغيّر اللي بين القوسين. بتشتغل مع أي أداة: Lovable وClaude وAI Studio وCursor وغيرهم.",
       "kit.copy": "انسخ", "rules.title": "9 قواعد تحميك من الصداع",
       "foot.t1": "عن الدليل", "foot.p1": "المصادر متجمعة ومراجعة في نوفمبر 2026. الأسعار والخطط المجانية بتتغير كتير، فاتأكد من صفحة الأداة قبل ما تدفع. لو رابط وقف أو عندك مصدر حلو، قولنا من هنا:",
+      "caution.title": "إمتى متعتمدش على الـ vibe coding؟", "caution.lede": "الـ vibe coding ممتاز للنماذج الأولية والأدوات الشخصية وتعلّم فكرة جديدة. لكن كل ما الحاجة أهم وأخطر، قلّل الاعتماد وزوّد المراجعة.",
+      "caution.slow.t": "ابطّئ وراجع، أو استعن بمبرمج", "caution.habits.t": "عادات تحميك", "caution.sum": "استخدمه عشان تبني وتتعلم أسرع، مش عشان تتخلى عن الفهم.",
       "skip": "تخطّى للمحتوى الرئيسي", "theme.toDark": "الوضع الداكن", "theme.toLight": "الوضع الفاتح",
       "foot.suggest": "اقترح مصدر أو بلّغ عن رابط", "foot.repo": "الكود على GitHub (MIT)", "lib.report": "بلّغ عن مشكلة", "lib.reportT": "الرابط واقف أو المعلومة قديمة؟ بلّغنا",
       "hero.reviewed": "آخر مراجعة للمصادر والأسعار: نوفمبر 2026", "hero.how": "إزاي بنختار؟",
@@ -114,6 +116,8 @@
       "kit.title": "Prompt kit", "kit.lede": "Copy a prompt and replace the parts in brackets. Works with any tool: Lovable, Claude, AI Studio, Cursor and more.",
       "kit.copy": "Copy", "rules.title": "9 rules that save you headaches",
       "foot.t1": "About this guide", "foot.p1": "Resources gathered and reviewed in November 2026. Prices and free tiers change often, so check the tool's page before paying. If a link breaks or you know a great resource, tell us here:",
+      "caution.title": "When not to rely on vibe coding", "caution.lede": "Vibe coding is great for prototypes, personal tools and learning something new. But the more important or risky the thing, the less you should lean on it and the more you should review.",
+      "caution.slow.t": "Slow down and review, or call a pro", "caution.habits.t": "Habits that protect you", "caution.sum": "Use it to build and learn faster, not to give up understanding.",
       "skip": "Skip to main content", "theme.toDark": "Dark mode", "theme.toLight": "Light mode",
       "foot.suggest": "Suggest a resource or report a link", "foot.repo": "Source on GitHub (MIT)", "lib.report": "Report an issue", "lib.reportT": "Dead link or outdated info? Let us know",
       "hero.reviewed": "Resources and prices last reviewed: November 2026", "hero.how": "How we choose",
@@ -854,6 +858,12 @@
   }
 
   /* ======================= PROMPT KIT & RULES ======================= */
+  function renderCaution() {
+    const k = C.caution; if (!k) { const s = $("#caution"); if (s) s.hidden = true; return; }
+    const li = (x) => `<li><b>${esc(L(x))}</b><span>${esc(L(x.d))}</span></li>`;
+    $("#caution-slow").innerHTML = k.slow.map(li).join("");
+    $("#caution-habits").innerHTML = k.habits.map(li).join("");
+  }
   function renderKit() {
     $("#kit").innerHTML = C.promptKit.map((k, i) => `<div class="kit-card"><h3>${icon(k.icon)}${esc(L(k.title))}</h3><span class="when">${esc(L(k.when))}</span><pre>${esc(L(k.text))}</pre><button class="copy" type="button" data-kit="${i}">${icon("copy")}${esc(t("kit.copy"))}</button></div>`).join("");
     const ics = ["sprout", "community", "step", "repo", "play", "shield", "book", "badge"];
@@ -1020,7 +1030,7 @@
   /* ======================= boot ======================= */
   function renderAll() {
     applyI18n(); renderCounts(); renderStudioTabs(); setPlayIcon(); renderIdea(); renderWizard(); renderPath();
-    renderLibFilters(); renderLib(); renderLibCharts(); renderTools(); renderFree(); renderKit(); applySettings();
+    renderLibFilters(); renderLib(); renderLibCharts(); renderTools(); renderFree(); renderKit(); renderCaution(); applySettings();
     if ($("#drawer").classList.contains("open")) renderAdmin();
   }
   function setLang(l) {
