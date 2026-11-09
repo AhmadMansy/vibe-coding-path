@@ -61,6 +61,17 @@ window.VC_RESOURCES = [
     }
   },
   {
+    id: "easy-vibe", type: "path", lang: "ar", cost: "free", level: "start", stage: 2,
+    goals: ["web", "game", "mobile", "career", "auto"], who: ["zero", "some", "dev", "pro"],
+    url: "https://datawhalechina.github.io/easy-vibe/ar-sa/",
+    provider: "Datawhale · Easy-Vibe (GitHub)",
+    title: { ar: "Easy-Vibe — كورس Vibe Coding كامل بالعربي", en: "Easy-Vibe: open-source Vibe Coding course" },
+    desc: {
+      ar: "كورس مفتوح المصدر على 3 مراحل: من أول لعبة وأنت مبتدئ، لتطبيقات Full Stack بقاعدة بيانات ودفع، لحد Claude Code والـ Agents. فيه نسخة عربي (بعض صفحات المرحلة التانية لسه بالصيني).",
+      en: "Open-source course in 3 stages: a first game for beginners, full-stack apps with a database and payments, then Claude Code and agents. Available in 10 languages including Arabic."
+    }
+  },
+  {
     id: "claude-academy", type: "path", lang: "en", cost: "free", level: "start", stage: 2,
     goals: ["all"], who: ["all"],
     url: "https://academy.claude.com",

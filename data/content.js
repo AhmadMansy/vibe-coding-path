@@ -186,7 +186,7 @@ window.VC_CONTENT = {
     { ar: "مشروع واحد في المرة", en: "One project at a time", d: { ar: "خلّص الأول لحد ما ينزل لناس، وبعدين افتح اللي بعده. المشاريع الكتير المفتوحة بتنقص منها كلها وبتضيّع منك الحماس.", en: "Finish the first until it's live, then start the next. Many half-open projects drain your focus and none of them ship." } }
   ],
 
-  /* إمتى متعتمدش على الـ vibe coding — "when not to vibe code" (last section of the page) */
+  /* إمتى متعتمدش على الـ vibe coding — "when not to vibe code" (after the prompt kit, before Easy-Vibe and "how we curate") */
   caution: {
     slow: [
       { ar: "الفلوس", en: "Money", d: { ar: "الدفع الإلكتروني والفواتير والحسابات. غلطة صغيرة بتتحول لخسارة حقيقية.", en: "Payments, invoices and accounting. A small bug becomes a real loss." } },

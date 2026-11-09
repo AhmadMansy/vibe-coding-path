@@ -56,6 +56,10 @@
       "foot.t1": "عن الدليل", "foot.p1": "المصادر متجمعة ومراجعة في نوفمبر 2026. الأسعار والخطط المجانية بتتغير كتير، فاتأكد من صفحة الأداة قبل ما تدفع. لو رابط وقف أو عندك مصدر حلو، قولنا من هنا:",
       "caution.title": "إمتى متعتمدش على الـ vibe coding؟", "caution.lede": "الـ vibe coding ممتاز للنماذج الأولية والأدوات الشخصية وتعلّم فكرة جديدة. لكن كل ما الحاجة أهم وأخطر، قلّل الاعتماد وزوّد المراجعة.",
       "caution.slow.t": "ابطّئ وراجع، أو استعن بمبرمج", "caution.habits.t": "عادات تحميك", "caution.sum": "استخدمه عشان تبني وتتعلم أسرع، مش عشان تتخلى عن الفهم.",
+      "next.kicker": "الخطوة اللي بعد كده", "next.title": "Easy-Vibe: كورس كامل مفتوح المصدر، وفيه نسخة عربي",
+      "next.body": "كورس مجاني من مجتمع Datawhale بيمشي معاك على 3 مراحل: من أول مشروع (لعبة الثعبان) وأنت مبتدئ أو PM، لحد تطبيقات Full Stack فيها قاعدة بيانات ودفع، وبعدين Claude Code والـ MCP والـ Agents. لو خلّصت المسار هنا وعايز تكمّل أعمق، ابدأ من هنا.",
+      "next.note": "الواجهة والمرحلة الأولى والتالتة مترجمين للعربي، لكن بعض صفحات المرحلة التانية لسه بتفتح بالصيني. الرخصة CC BY-NC-SA 4.0.",
+      "next.site": "افتح الكورس بالعربي", "next.repo": "المشروع على GitHub",
       "skip": "تخطّى للمحتوى الرئيسي", "theme.toDark": "الوضع الداكن", "theme.toLight": "الوضع الفاتح",
       "foot.suggest": "اقترح مصدر أو بلّغ عن رابط", "foot.repo": "الكود على GitHub (MIT)", "lib.report": "بلّغ عن مشكلة", "lib.reportT": "الرابط واقف أو المعلومة قديمة؟ بلّغنا",
       "hero.reviewed": "آخر مراجعة للمصادر والأسعار: نوفمبر 2026", "hero.how": "إزاي بنختار؟",
@@ -118,6 +122,10 @@
       "foot.t1": "About this guide", "foot.p1": "Resources gathered and reviewed in November 2026. Prices and free tiers change often, so check the tool's page before paying. If a link breaks or you know a great resource, tell us here:",
       "caution.title": "When not to rely on vibe coding", "caution.lede": "Vibe coding is great for prototypes, personal tools and learning something new. But the more important or risky the thing, the less you should lean on it and the more you should review.",
       "caution.slow.t": "Slow down and review, or call a pro", "caution.habits.t": "Habits that protect you", "caution.sum": "Use it to build and learn faster, not to give up understanding.",
+      "next.kicker": "Where to go next", "next.title": "Easy-Vibe: a full open-source course, with an Arabic edition",
+      "next.body": "A free course from the Datawhale community in 3 stages: from a first project (a Snake game) for beginners and PMs, to full-stack apps with a database and payments, then Claude Code, MCP and agents. If you've finished the path here and want to go deeper, start there.",
+      "next.note": "Available in 10 languages. Some Stage 2 pages in the Arabic edition still open in Chinese. Licensed CC BY-NC-SA 4.0.",
+      "next.site": "Open the course", "next.repo": "Project on GitHub",
       "skip": "Skip to main content", "theme.toDark": "Dark mode", "theme.toLight": "Light mode",
       "foot.suggest": "Suggest a resource or report a link", "foot.repo": "Source on GitHub (MIT)", "lib.report": "Report an issue", "lib.reportT": "Dead link or outdated info? Let us know",
       "hero.reviewed": "Resources and prices last reviewed: November 2026", "hero.how": "How we choose",
@@ -160,6 +168,7 @@
     document.title = lang === "ar" ? "مسار الفايب كودينج" : "Vibe Coding Path";
     $$("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
     $("#q").placeholder = t("lib.ph");
+    const nx = $("#next-site"); if (nx) nx.href = "https://datawhalechina.github.io/easy-vibe/" + (lang === "ar" ? "ar-sa/" : "en/");
     $("#lang-ar").setAttribute("aria-pressed", lang === "ar");
     $("#lang-en").setAttribute("aria-pressed", lang === "en");
     applyTheme();

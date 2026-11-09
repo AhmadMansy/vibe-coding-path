@@ -382,7 +382,15 @@ section { padding: clamp(3rem, 7vw, 5.5rem) 0; }
 .caution-card li span { color: var(--muted); font-size: .92rem; }
 .caution-sum { margin-top: 1.4rem; text-align: center; font-family: var(--font-display); font-size: var(--step-1); }
 @media (max-width: 800px) { .caution-grid { grid-template-columns: 1fr; } }
-#curation { padding: 4rem 0; }
+
+#next { padding: 1rem 0 3rem; }
+.next-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem 2rem; align-items: center; background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--r-m); padding: 1.5rem 1.6rem; }
+.next-card h2 { font-size: var(--step-2); margin: .6rem 0 .5rem; }
+.next-card p { margin: 0 0 .6rem; max-width: 65ch; }
+.next-card .next-note { color: var(--muted); font-size: .92rem; margin: 0; }
+.next-actions { display: flex; flex-direction: column; gap: .6rem; }
+@media (max-width: 800px) { .next-card { grid-template-columns: 1fr; } .next-actions { flex-direction: row; flex-wrap: wrap; } }
+#curation { padding: 3rem 0 4rem; border-top: 1.5px solid var(--line); }
 .cur-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .cur-card { background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--r-m); padding: 1.1rem 1.2rem; }
 .cur-card h3 { font-size: var(--step-1); margin-bottom: .4rem; }
