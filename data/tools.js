@@ -45,6 +45,12 @@ window.VC_TOOLS = [
     desc: { ar: "مناسب لأدوات الشغل الداخلية: جداول، نماذج، لوحات متابعة بدون أي كود.", en: "Suited to internal work tools: tables, forms and dashboards without code." }
   },
   {
+    id: "kliv", name: "Kliv", url: "https://kliv.dev/ar", cat: "builder", color: "#3F8F7A",
+    ease: 8.8, depth: 6.4, goals: ["web", "work"], who: ["zero", "pro"],
+    free: { ar: "فيه خطة مجانية · الواجهة بالعربي", en: "Free plan available · Arabic interface" },
+    desc: { ar: "توصف تطبيق الويب بكلامك فيبنيه ويستضيفه: تسجيل دخول، قاعدة بيانات، إيميل، دفع على حساب Stripe بتاعك، ودومين خاص بيك.", en: "Describe a web app in plain words and it builds and hosts it: sign-in, database, email, payments through your own Stripe account, and your own domain." }
+  },
+  {
     id: "claude", name: "Claude (Artifacts)", url: "https://claude.ai", cat: "builder", color: "#D97757",
     ease: 9.6, depth: 4.1, goals: ["work", "kids", "game", "web"], who: ["all"],
     free: { ar: "مجاني للبداية", en: "Free to start" },
